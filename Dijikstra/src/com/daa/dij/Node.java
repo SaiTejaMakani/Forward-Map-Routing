@@ -6,11 +6,12 @@ public class Node {
 	private float distanceFromSource=Integer.MAX_VALUE;
 	
 	private boolean visited;
+	private String path= " ";
 	
 	private ArrayList<Edge> edges = new ArrayList<Edge>();
 	
 	public float getDistanceFromSource(){
-		//System.out.println(distanceFromSource + "_");//testing
+	
 		return distanceFromSource;
 	}
 	
@@ -25,9 +26,8 @@ public class Node {
 		this.visited=visited;
 	}
 	
-//	public ArrayList<Edge> getEdges(){
-//		return edges;
-//	}
+	
+
 	public ArrayList<Edge> getEdges() {
 		
 		return edges;
@@ -35,6 +35,15 @@ public class Node {
 	
 	public void setEdges(ArrayList<Edge> edges){
 		this.edges=edges;
+	}
+
+	
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
 	}
 
 	
